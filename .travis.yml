@@ -1,0 +1,9 @@
+language: java
+jdk:
+  - openjdk17
+
+script: ./mvnw clean install
+
+
+notification:
+  email: yasrabniazmemon@gmail.com
