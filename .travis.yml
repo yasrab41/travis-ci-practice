@@ -1,9 +1,14 @@
 language: java
 jdk:
-  - openjdk17
+  - openjdk17.0.1
 
 script: ./mvnw clean install
 
+
+jobs:
+  include:
+    - stage: Test
+      script: ./mvnw clean test
 
 notification:
   email: yasrabniazmemon@gmail.com
